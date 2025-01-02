@@ -9,7 +9,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom'
 import { usePostPasswordMutation } from '../../redux/feature/passwordReset/reset'
 import useSwal from '../../hooks/useSWal'
 import Swal from 'sweetalert2'
-
+   // reset password
 const ResetPassword = () => {
     const [hide, setHide] = useState(true)
     const navigate = useNavigate()
