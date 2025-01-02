@@ -1,0 +1,111 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .login-container {
+    background-color: #ffffff;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 600px;
+  }
+  
+  .login-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-logo {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+  }
+  
+  .login-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .input-field,button{
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .input-field::placeholder,
+  button {
+    color: #666;
+  }
+
+  
+  /* Forgot Password Section */
+  .forgot-password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .forgot-password {
+    color: #007bff;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .login-container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .logo-icon {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Tablet and larger screens */
+  @media (min-width: 600px) and (max-width: 900px) {
+    .login-container {
+      padding: 30px;
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .login-container {
+      width: 60%;
+    }
+  }
+  

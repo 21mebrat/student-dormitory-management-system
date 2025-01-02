@@ -1,0 +1,14 @@
+.system-admin-dashboard {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+  }
+  .system-admin-dashboard-right {
+   width: 100%;
+  }
+  
+  .system-admin-conten {
+    margin-top: 20px;
+    /* This is where your content will go */
+  }

@@ -1,0 +1,141 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .student-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f6f1f1;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .student-header-logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .student-header-navbar {
+    flex-grow: 1;
+    max-width: calc(100% / 3);
+  }
+  
+  .student-header-navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  
+  .student-header-navbar-link {
+    margin-left: 30px;
+  }
+  
+  .student-header-navbar-link a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .student-header-navbar-link a:hover {
+    color: #ff6600; /* Add a color change on hover */
+  }
+  
+  /* Container for the mobile navbar */
+.mobile-navbar {
+    display: none; /* Hide by default for larger screens */
+    position: relative;
+  }
+  
+  /* Button styling for the menu icon */
+  .mobile-navbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #333;
+    z-index: 1000;
+  }
+  
+  /* List of links in the mobile navbar */
+  .mobile-navbar-link {
+    position: absolute;
+    top: 50px; /* Space below the menu button */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+    z-index: 999;
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  /* Individual link styles */
+  .mobile-navbar-link li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .mobile-navbar-link li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /* Hover effect for links */
+  .mobile-navbar-link li a:hover {
+    color: #007bff;
+  }
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      
+      .student-header-navbar {
+          display: none;
+        }
+        .mobile-navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+          }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .student-header-logo {
+      height: 35px;
+    }
+  
+    .student-header-navbar-link a {
+      font-size: 12px;
+    }
+  }
+    @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  

@@ -1,0 +1,188 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 50px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header .header-right-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dashboard-header .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right:15px ;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+}
+
+.profile-container {
+  position: relative;
+  /* width: 70px; */
+}
+
+/* Button styling for the menu icon */
+.mobile-navbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #333;
+  z-index: 1000;
+}
+
+/* List of links in the mobile navbar */
+.profile-manage-container {
+  position: absolute;
+  top: 100%; /* Space below the menu button */
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  list-style: none;
+  width: 300px;
+  z-index: 999;
+  animation: slideIn 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-manage-image{
+  min-width: 100%;
+ border-top-left-radius:8px;
+ border-top-right-radius:8px;
+  background: #007bff;
+  padding: 0 20px;
+  height: 100px;
+  max-height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-manage-image .profile-image{
+  position: absolute;
+  bottom: -15px;
+  left: calc(300px - 60%);
+}
+.profile-container ul{
+  z-index: 999;
+  animation: slideIn 0.3s ease-in-out;
+ }
+/* Individual link styles */
+.profile-container li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.profile-container li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover effect for links */
+.profile-container li a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .student-header-navbar {
+        display: none;
+      }
+      .mobile-navbar {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+  
+}
+
+.role {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logout {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logout:hover {
+  color: #e74c3c;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-header {
+    padding: 15px;
+  }
+
+  .dashboard-header .header-right-side {
+    gap: 15px;
+  }
+
+  .profile-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .role {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 10px;
+  }
+
+  .dashboard-header .header-right-side {
+    gap: 10px;
+  }
+
+  .profile-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .role {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header {
+    padding: 10px;
+  }
+
+  .profile-image {
+    width: 28px;
+    height: 28px;
+  }
+}

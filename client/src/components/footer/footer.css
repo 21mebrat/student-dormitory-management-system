@@ -1,0 +1,19 @@
+/* Base styling for the footer */
+.footer {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Footer bottom (Copyright) */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #888;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  

@@ -1,0 +1,98 @@
+.student-dorm-search {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    margin-top: 4rem;
+    justify-content: center;
+    min-height: calc(100vh - 7rem);
+    padding: 20px;
+    gap: 10px;
+  }
+  .student-dorm-detail{
+      flex: 1;
+      min-width: 300px;
+      height: 400px;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  .student-dorm-detail .title{
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+  }
+ 
+  .student-dorm-search-left {
+    flex: 1;
+    max-width: 50%; /* Image takes up 50% on larger screens */
+  }
+  
+  .student-dorm-search-left img {
+    width: 100%;
+    height: calc(100vh - 10rem);
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for a polished look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
+  }
+  
+  .student-dorm-search-right {
+    flex: 1;
+    max-width: 50%; /* Content takes up 50% on larger screens */
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .student-dorm-search-right h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color for contrast */
+    text-align: left;
+  }
+  
+  .student-dorm-search-right input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Input field shadow */
+  }
+  
+  .student-dorm-search-right input:focus {
+    outline: none;
+    border-color: #007BFF; /* Highlighted border color */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .student-dorm-search {
+        margin-top: 6rem;
+      flex-direction: column; /* Stack items vertically */
+      gap: 5px; /* Reduced gap */
+    }
+  
+    .student-dorm-search-left,
+    .student-dorm-search-right {
+      max-width: 100%; /* Take up full width on small screens */
+    }
+  
+    .student-dorm-search-right h1 {
+      font-size: 1.5rem; /* Smaller font size for heading */
+      text-align: center;
+    }
+  
+    .student-dorm-search-right input {
+      font-size: 0.9rem; /* Adjust input font size */
+    }
+  }
+  

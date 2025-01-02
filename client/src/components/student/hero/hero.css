@@ -1,0 +1,83 @@
+/* Overall container for the hero section */
+.student-hero {
+    display: flex;
+    margin:  4rem auto;
+    flex-wrap: wrap; /* Ensures proper layout on smaller screens */
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    gap: 20px;
+  }
+  
+  /* Left section containing the heading and paragraph */
+  .student-hero-left {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .student-hero-left h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .student-hero-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Right section for the Swiper (slideshow) */
+  .student-hero-right {
+    flex: 1;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 10px;
+  }
+  
+  /* Responsive Swiper image styles */
+  .student-hero-right .img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive design for smaller devices */
+  @media (max-width: 768px) {
+    .student-hero {
+      flex-direction: column; /* Stack the left and right sections */
+      text-align: center;
+    }
+  
+    .student-hero-left h1 {
+      font-size: 1.8rem;
+    }
+  
+    .student-hero-left p {
+      font-size: 0.9rem;
+    }
+  
+    .student-hero-right {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .student-hero-left h1 {
+      font-size: 1.5rem;
+    }
+  
+    .student-hero-left p {
+      font-size: 0.85rem;
+    }
+  
+    .student-hero {
+      padding: 15px;
+    }
+  }
+  

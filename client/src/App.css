@@ -1,0 +1,10 @@
+.btn-primary{
+    background:orange;
+    border: none;
+    border-radius: .3rem;
+    padding: 7px 20px;
+}
+.btn-primary:hover{
+    background-color: black;
+    color: white;
+}

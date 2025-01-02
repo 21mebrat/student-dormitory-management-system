@@ -1,0 +1,15 @@
+.dashboard-layout {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+  }
+  .dashboard-main {
+   width: 100%;
+  }
+  
+  .content {
+    margin-top: 20px;
+    /* This is where your content will go */
+  }
+  

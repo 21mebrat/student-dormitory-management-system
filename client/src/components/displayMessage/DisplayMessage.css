@@ -1,0 +1,66 @@
+.message-container {
+    padding: 16px;
+    display: grid;
+    gap: 16px;
+    margin: 1rem auto;
+}
+
+.message-card {
+    background-color: #f9f9f9;
+    color: #1e1e2f;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 70%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.message-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.message-header {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.message-header span {
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.message-email {
+    font-size: 1rem;
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.message-email:hover {
+    text-decoration: underline;
+}
+
+.message-body {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.no-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888888;
+}
+
+@media (max-width: 600px) {
+    .message-card {
+        padding: 12px;
+    }
+
+    .message-header {
+        font-size: 1rem;
+    }
+
+    .message-body {
+        font-size: 0.9rem;
+    }
+}

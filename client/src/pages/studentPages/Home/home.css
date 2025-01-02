@@ -1,0 +1,52 @@
+/* Styling for the column container */
+.student-home-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 20px;
+  }
+  
+  /* Styling for each column */
+  .student-home-column {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for headings */
+  .student-home-column h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for paragraphs */
+  .student-home-column p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styling for smaller screens */
+  @media (max-width: 768px) {
+    .student-home-columns {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .student-home-column {
+      padding: 15px;
+    }
+  
+    .student-home-column h2 {
+      font-size: 22px;
+    }
+  
+    .student-home-column p {
+      font-size: 14px;
+    }
+  }
+  

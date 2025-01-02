@@ -1,0 +1,121 @@
+.student-contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 4rem auto;
+    color: #333;
+  }
+  
+  .student-contact h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .student-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .student-contact-address {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .address-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .address-pargraphs {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .student-contact-message {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .btn-contact {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: inherit; /* Matches the rest of your design's font */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical; /* Allows resizing only vertically */
+    min-height: 100px; /* Ensures a reasonable default size */
+    max-height: 300px; /* Limits maximum height to avoid breaking layout */
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  textarea:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); /* Adds a subtle glow */
+  }
+  .btn-contact:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .student-contact-info {
+      flex-direction: column;
+      gap: 20px;
+    }
+    textarea {
+        font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+        padding: 8px; /* Reduced padding for better fit */
+      }
+    
+    .student-contact-address,
+    .student-contact-message {
+      width: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    textarea {
+      font-size: 0.85rem;
+      padding: 6px;
+      min-height: 80px; /* Smaller height for very small screens */
+    }
+  }
+  
