@@ -18,7 +18,7 @@ const passwordReset = async (req, res, next) => {
     const token = jwt.sign(
       { userId: user._id }, // Payload containing the user ID
       'reset', // Secret key (store it securely in environment variables)
-      { expiresIn: '1m' } // Token expires in 1 minute
+      { expiresIn: '4m' } // Token expires in 1 minute
     );
 
     // Construct the reset link with the token
