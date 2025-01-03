@@ -103,7 +103,7 @@ A comprehensive web application designed to manage student dormitories efficient
    ```
 9. Start the frontend application:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ---
@@ -111,7 +111,7 @@ A comprehensive web application designed to manage student dormitories efficient
 ## Usage
 1. Access the application in your browser at:
    ```plaintext
-   http://localhost:3000
+   http://localhost:5173
    ```
 2. Log in as an admin or student to access respective features.
 3. Use the dashboard to manage dormitory-related tasks.
