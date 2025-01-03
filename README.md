@@ -2,7 +2,7 @@
 
 A comprehensive web application designed to manage student dormitories efficiently. Built using the MERN stack (MongoDB, Express, React, Node.js), this system provides an intuitive interface for students and administrators to handle dormitory-related activities.
 
----
+
 
 ## Table of Contents
 - [Features](#features)
