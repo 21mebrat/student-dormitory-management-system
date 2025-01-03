@@ -48,7 +48,7 @@ const passwordReset = async (req, res, next) => {
           </a>
         </p>
         <p style="font-size: 14px; color: #7f8c8d; text-align: center;">
-          This link will expire in 1 hour for security purposes. If you did not request this, please ignore this email or contact our support team immediately.
+          This link will expire in 4 minutes for security purposes. If you did not request this, please ignore this email or contact our support team immediately.
         </p>
         <div style="border-top: 3px solid #2c3e50; margin: 20px 0;"></div>
         <p style="font-size: 14px; color: #7f8c8d;">
