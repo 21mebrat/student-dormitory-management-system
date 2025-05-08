@@ -151,5 +151,4 @@ For any inquiries or feedback, contact:
 **GitHub**: [21mebrat](https://github.com/21mebrat)
 ```
 
-Let me know if you’d like further customizations!
 
